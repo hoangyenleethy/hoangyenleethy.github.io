@@ -1,104 +1,85 @@
-/* General Reset */
-* {
+/* Global */
+body {
+  font-family: 'Muli', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Muli', sans-serif;
-}
-
-body {
-  line-height: 1.6;
-  background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
 /* Navigation */
 .topnav {
-  background-color: #333;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
   overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
 }
 
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 20px;
+  color: #333;
   text-decoration: none;
+  margin: 0 15px;
   font-size: 16px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  padding: 8px 12px;
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #999;
   color: white;
+  border-radius: 4px;
 }
 
-/* Container styling */
-.container2 {
-  max-width: 1000px;
-  margin: 20px auto;
-  padding: 10px;
-}
-
-/* Boxed sections */
-.boxed {
-  background: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Profile */
-.profile-container {
+/* Profile Section */
+.profile-section {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
 .profile-left img {
-  width: 140px;
-  border-radius: 5px;
+  width: 150px;
+  border-radius: 50%;
+  margin-right: 30px;
 }
 
 .profile-right h1 {
+  margin: 0;
   font-size: 2em;
-  margin-bottom: 5px;
 }
 
 .profile-right .title {
+  margin: 5px 0;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
-/* Section Titles */
-section h2 {
-  margin-bottom: 10px;
-  color: #4CAF50;
+/* Content Sections */
+.content-section {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
 }
 
-/* Lists */
-ul {
+.content-section h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.content-section ul {
   list-style-type: disc;
   margin-left: 20px;
-  margin-bottom: 10px;
 }
 
-ul li {
+.content-section ul li {
   margin-bottom: 5px;
 }
 
 /* Links */
 a {
-  color: #4CAF50;
-  text-decoration: none;
+  color: #1a0dab;
 }
-
 a:hover {
   text-decoration: underline;
 }
