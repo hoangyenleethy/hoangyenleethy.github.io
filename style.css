@@ -1,32 +1,24 @@
-/* #wrap {
-  width:500px;
-  margin:0 auto;
-  background:#9eeff4;
-  height:10px;} */
-
 body {
   margin: 0;
   font-family: 'Muli', san-serif;
-  /* font-family: Helvetica; */
-  /* font-family: Verdana; */
   background-color: white;
 }
 
 .container1 {
-  width: 61%;
+  width:  70%;
   height: 70%;
   margin: 10px auto;
 }
 
 .container2 {
-  width: 65%;
+  width:  70%;
   height: 70%;
   margin: 20px auto;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #white;
+  background-color: white;
 }
 
 .topnav a {
@@ -69,3 +61,4 @@ body {
     /* border-radius: 10px; */
     /* -moz-border-radius: 20px; */
   }
+
