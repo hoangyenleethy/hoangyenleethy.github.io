@@ -1,73 +1,96 @@
-/* #wrap {
-  width:500px;
-  margin:0 auto;
-  background:#9eeff4;
-  height:10px;} */
+body {
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: white;
+  color: #333;
+}
 
-  body {
-    margin: 0;
-    font-family: 'Muli', san-serif;
-    /* font-family: Helvetica; */
-    /* font-family: Verdana; */
-    background-color: white;
-  }
-  
-  .mainhead {text-align: center}
+html {
+  overflow-y: scroll;
+}
 
-  .container1 {
-    width: 61%;
-    height: 70%;
-    margin: 10px auto;
-  }
-  
-  .container2 {
-    width: 65%;
-    height: 70%;
-    margin: 20px auto;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #white;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #473E3C;
-    text-align: center;
-    padding: 12px 14px;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .topnav a:hover {
-    background-color: lightgrey;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: grey;
-    color: white;
-  }
-  
-  #left {
-    width: 100px;
-    float: left;
-  }
-  #right {
-    margin-left: 150px;
-    /* Change this to whatever the width of your left column is*/
-  }
-  .clear {
-    clear: both;
-  }
-  
-  .boxed {
-      /* border: 1px solid green ; */
-      background-color: white;
-      padding: 10px;
-      margin: 10px;
-      width: 700px;
-      /* border-radius: 10px; */
-      /* -moz-border-radius: 20px; */
-    }
+/* Header */
+.mainhead {
+  background: white;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.mainhead a {
+  color: #336699;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mainhead a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+}
+
+.topnav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #575757;
+}
+
+.topnav a.active {
+  background-color: #336699;
+}
+
+/* Content Layout */
+.container2 {
+  max-width: 65%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#left {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+}
+
+#left img {
+  border-radius: 50%;
+  border: 3px solid #336699;
+}
+
+#right {
+  flex: 2;
+  margin-left: 10px;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+/* Section Titles */
+.clear b u {
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 10px;
+}
